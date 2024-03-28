@@ -14,10 +14,26 @@
     - 개발툴 설치
         - SSMS(SQL SERVER MANAGE STUDIO) - DB에 접근 -> 여러개발 작업할때 사용
 
+    - 데이터베이스의 개념
+        - 통합된 데이터: 데이터를 통합하는 개념. 각자 사용하던 데이터의 중복을 최소화하여 중복으로 인한 데이터 불일치 제거
+        - 저장된 데이터: 문서로 보관된 데이터가 아니라 컴퓨터 저장장치에 저장된 데이터
+        - 운영 데이터: 조직의 목적을 위해 사용되는 데이터. 즉, 업무를 위한 검색을 목적으로 저장됨
+        - 공용 데이터: 한 사람 또는 한 업무를 위해 사용되는 데이터가 아니라 공동으로 사용되는 데이터를 의미
+
     - 데이터베이스 기초
         - 데이터를 보관, 관리, 서비스하는 시스템
         - DATA, INFORMAITON, KNOWLEDGE 개념
-        - DBMS > Database > Data(Model) 
+        - DBMS > Database > Data(Model)
+    
+    - 데이터 모델(Data Model) 
+        - 계층 데이터 모델(hierarchical data model)
+        - 네트워크 데이터 모델(network data model)관계 데이터 모델(relation data model)객체 데이터 모델(object data model)객체-관계 데이터 모델(object-relational data model)
+출처: https://mangkyu.tistory.com/19 [MangKyu's Diary:티스토리]
+    
+    - 데이터베이스 시스템의 구성
+        - DBMS: 사용자와 데이터베이스를 연결시켜주는 소프트웨어
+        - 데이터베이스: 데이터를 모아둔 토대
+        - 데이터 모델: 데이터가 저장되는 기법에 관한 내용
 
     - DB언어
         - SQL(Structed Query Language) = 구조화된 질이 언어
@@ -27,10 +43,10 @@
                 - ALTER : 기존에 존재하는 데이터베이스 객체를 변경
 
             - DML (Data Manipulation Language) - 데이터의 삽입, 삭제, 검색과 수정 등을 처리
-                - INSERT : 데이터베이스 객체에 데이터 입력
-                - DELETE : 데이터베이스 객체에 데이터 삭제
-                - UPDATE : 기존에 존재하는 데이터베이스 객체안의 데이터 수정
-                - SELECT : 데이터베이스 객체로부터 데이터 검색
+                - INSERT (삽입) : 데이터베이스 객체에 데이터 입력
+                - DELETE (삭제) : 데이터베이스 객체에 데이터 삭제
+                - UPDATE (수정) : 기존에 존재하는 데이터베이스 객체안의 데이터 수정
+                - SELECT (검색) : 데이터베이스 객체로부터 데이터 검색
             
             - DCL (Data Control Language) - 데이터베이스 사용자의 권한을 제어
                 - GRANT : 데이터베이스 객체에 권한 부여
@@ -51,4 +67,7 @@
             - 개념 스키마 = 전체 데이터베이스의 정의를 의미
             - 내부 스키마 = 물리적 저장 장치에 데이터베이스가 실제로 저장되는 방법의 표현
 
+
+    - SQL 기본 학습
+        - SSMS 로 실행
 ## 2일차
