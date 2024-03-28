@@ -73,7 +73,25 @@
 
     - DML 학습
         - SQL 명령어 키워드 : SELECT, INSERT, UPDATE, DELETE
-        - IT개발 표현언어 : Request, Create, Update, Delete 
+        - IT개발 표현언어 : Request, Create, Update, Delete(CRUD로 부름. -> CRU개발 뜻은 INSERT,UPDATE,DELETE로 개발)
         - SELECT (검색)
+
+    - 단계별 검색
+    ``sql
+        --- step 1
+        SELECT * /* ALL */
+	        FROM Customer
+
+        --- step 2
+        SELECT * /* ALL */
+	        FROM Customer
+	        WHERE [name] = '김연아';
+
+        --- step 3
+        SELECT phone /* ALL */
+	        FROM Customer
+	        WHERE [name] = '김연아';
+        ``
+        step 1 -> 수정 -> step 2 -> 수정 ->step 3
 
 ## 2일차
