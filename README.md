@@ -44,7 +44,7 @@
     - 데이터베이스의 개념적 구조
         - 3단계 데이터베이스 구조
 ![struct](https://raw.githubusercontent.com/junghwan928/basic-database-2024/main/Image/img.png)
-            - 외부 <-> 개념 <-> 내부 <-> 데이터베이스(물리적 데이터구조)
+
             - 외부 스키마 = 일반 사용자나 응용 프로그래머가 접근하는 계층
                 - 전체 데이터메이스 중에서 하나의 논리적인 부분을 의미
             
