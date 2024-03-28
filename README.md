@@ -76,6 +76,12 @@
         - IT개발 표현언어 : Request, Create, Update, Delete(CRUD로 부름. -> CRU개발 뜻은 INSERT,UPDATE,DELETE로 개발)
         - SELECT (검색)
             ```SQL
+            SELECT [ALL | DISTINCT] 속성이름(들)
+                FROM 테이블 이름(들)
+                [WHERE 검색조건(들)]
+                [GROUP BY 속성이름(들)]
+                [HAVING 검색조건(들)]
+                [ORDER BY 속성이름(들) [ASC | DESC]]
             ```
 
 
@@ -86,12 +92,12 @@
 	        FROM Customer
 
         --- step 2
-        SELECT * /* ALL */
+        SELECT * 
 	        FROM Customer
 	        WHERE [name] = '김연아';
 
         --- step 3
-        SELECT phone /* ALL */
+        SELECT phone 
 	        FROM Customer
 	        WHERE [name] = '김연아';
         ```
