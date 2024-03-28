@@ -70,6 +70,7 @@
 
     - SQL 기본 학습
         - SSMS 로 실행
+        - SELECT문
 
     - DML 학습
         - SQL 명령어 키워드 : SELECT, INSERT, UPDATE, DELETE
@@ -83,7 +84,7 @@
                 [HAVING 검색조건(들)]
                 [ORDER BY 속성이름(들) [ASC | DESC]]
             ```
-
+    
 
     - 단계별 검색
     ```SQL

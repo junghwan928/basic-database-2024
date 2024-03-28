@@ -1,25 +1,25 @@
--- Ã¥Áß¿¡¼­ 'Ãà±¸ÀÇ ¿ª»ç'¶ó´Â µµ¼­ÀÇ ÃâÆÇ»ç¿Í °¡°ÝÀ» ¾Ë°í½Í¾î/
--- DBO´Â DATABASE OWNER
--- DML(4°¡Áö) Áß SELECT(Á¶È¸)
+-- ì±…ì¤‘ì—ì„œ 'ì¶•êµ¬ì˜ ì—­ì‚¬'ë¼ëŠ” ë„ì„œì˜ ì¶œíŒì‚¬ì™€ ê°€ê²©ì„ ì•Œê³ ì‹¶ì–´/
+-- DBOëŠ” DATABASE OWNER
+-- DML(4ê°€ì§€) ì¤‘ SELECT(ì¡°íšŒ)
 SELECT publisher, price 
 	FROM Book
-	WHERE bookname = 'Ãà±¸ÀÇ ¿ª»ç';
+	WHERE bookname = 'ì¶•êµ¬ì˜ ì—­ì‚¬';
 
 /*
-- SQL¿¡¼­´Â EQUAL ¿¬»êÀÚ¿¡ == »ç¿ë¾ÈÇÔ
-- ¹«Á¶°Ç =
+- SQLì—ì„œëŠ” EQUAL ì—°ì‚°ìžì— == ì‚¬ìš©ì•ˆí•¨
+- ë¬´ì¡°ê±´ =
 
-- SQL¿¡¼­´Â ´ë¼Ò¹®ÀÚ ±¸ºÐ¾øÀ½
-- ÇÏÁö¸¸, Å°¿öµå´Â ´ë¹®ÀÚ »ç¿ëÇÒ °Í
+- SQLì—ì„œëŠ” ëŒ€ì†Œë¬¸ìž êµ¬ë¶„ì—†ìŒ
+- í•˜ì§€ë§Œ, í‚¤ì›Œë“œëŠ” ëŒ€ë¬¸ìž ì‚¬ìš©í•  ê²ƒ
 
-- SQL¿¡¼­´Â ¹®ÀÚ¿­¿¡ " <- »ç¿ë¾ÈÇÔ.
-- ¹«Á¶°Ç ' <- »ç¿ë
+- SQLì—ì„œëŠ” ë¬¸ìžì—´ì— " <- ì‚¬ìš©ì•ˆí•¨.
+- ë¬´ì¡°ê±´ ' <- ì‚¬ìš©
 
-- SQL¿¡¼­´Â ; <- ÇÊ¼ö°¡ ¾Æ´Ô.
-- ÇÏÁö¸¸, Áß¿äÇÑ »çÇ×¿¡¼­´Â »ç¿ëÇÒ°Í
+- SQLì—ì„œëŠ” ; <- í•„ìˆ˜ê°€ ì•„ë‹˜.
+- í•˜ì§€ë§Œ, ì¤‘ìš”í•œ ì‚¬í•­ì—ì„œëŠ” ì‚¬ìš©í• ê²ƒ
 */
 
--- ±è¿¬¾Æ °í°´ÀÇ ÀüÈ­¹øÈ£¸¦ Ã£À¸½Ã¿ä
+-- ê¹€ì—°ì•„ ê³ ê°ì˜ ì „í™”ë²ˆí˜¸ë¥¼ ì°¾ìœ¼ì‹œìš”
 
 --- 1
 SELECT * /* ALL */
@@ -28,9 +28,9 @@ SELECT * /* ALL */
 --- 2
 SELECT * /* ALL */
 	FROM Customer
-	WHERE [name] = '±è¿¬¾Æ';
+	WHERE [name] = 'ê¹€ì—°ì•„';
 
 --- 3
 SELECT phone /* ALL */
 	FROM Customer
-	WHERE [name] = '±è¿¬¾Æ';
+	WHERE [name] = 'ê¹€ì—°ì•„';
