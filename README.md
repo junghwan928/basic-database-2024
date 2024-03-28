@@ -70,4 +70,10 @@
 
     - SQL 기본 학습
         - SSMS 로 실행
+
+    - DML 학습
+        - SQL 명령어 키워드 : SELECT, INSERT, UPDATE, DELETE
+        - IT개발 표현언어 : Request, Create, Update, Delete 
+        - SELECT (검색)
+
 ## 2일차
