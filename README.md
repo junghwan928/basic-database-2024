@@ -101,7 +101,7 @@
 	        FROM Customer
 	        WHERE [name] = '김연아';
         ```
-        step 1 -> 수정 -> step 2 -> 수정 ->step 3
+        - step 1 -> 수정 -> step 2 -> 수정 ->step 3
 
 
     
