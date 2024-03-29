@@ -7,11 +7,15 @@
     - DBMS 엔진 - 개발자 버전
         - iso 다운로드 후 설치 추천
         - SQL Server에 대한 Azure 확장 비활성화
+        ![기능선택](https://raw.githubusercontent.com/junghwan928/basic-database-2024/main/Image/db001.png)
+        
         - 데이터베이스 엔진 구성부터 중요
             - Windows인증모드로 하면 외부에서 접근불가
             - 혼합모드(SA)에만 암호 지정 / mssql_p@ss(8자이상/ 대소문자구분 / 특수문자 1자 이상)
             - 데이터 루트 디렉토리 변경
-    - 개발툴 설치
+
+
+    - [개발툴 설치](https://learn.microsoft.com/ko-kr/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
         - SSMS(SQL SERVER MANAGE STUDIO) - DB에 접근 -> 여러개발 작업할때 사용
 
     - 데이터베이스의 개념
@@ -27,8 +31,11 @@
     
     - 데이터 모델(Data Model) 
         - 계층 데이터 모델(hierarchical data model)
-        - 네트워크 데이터 모델(network data model)관계 데이터 모델(relation data model)객체 데이터 모델(object data model)객체-관계 데이터 모델(object-relational data model)
-출처: https://mangkyu.tistory.com/19 [MangKyu's Diary:티스토리]
+        - 네트워크 데이터 모델(network data model)
+        - 관계 데이터 모델(relation data model)
+        - 객체 데이터 모델(object data model)
+        - 객체-관계 데이터 모델(object-relational data model)
+
     
     - 데이터베이스 시스템의 구성
         - DBMS: 사용자와 데이터베이스를 연결시켜주는 소프트웨어
@@ -71,6 +78,7 @@
     - SQL 기본 학습
         - SSMS 로 실행
         - SELECT문
+        ![SSM Login](https://raw.githubusercontent.com/junghwan928/basic-database-2024/main/Image/db002.png)
 
     - DML 학습
         - SQL 명령어 키워드 : SELECT, INSERT, UPDATE, DELETE
