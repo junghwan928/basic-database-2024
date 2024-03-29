@@ -153,4 +153,13 @@
         - 릴레이션
         - 제약조건
         - 관계대수
+
 - DML 학습
+    - Select 문
+        - 복합조건(ASC, DESC), 정렬
+        - 집계함수와 GROUP BY
+            - SUM(총합)
+            - AVG(평균)
+            - COUNT(계수)
+            - MIN(최솟값)
+            - MAX(최댓값)
