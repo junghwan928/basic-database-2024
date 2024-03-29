@@ -58,6 +58,10 @@
             - DCL (Data Control Language) - 데이터베이스 사용자의 권한을 제어
                 - GRANT : 데이터베이스 객체에 권한 부여
                 - REVOKE : 이미 부여된 데이터베이스 객체의 권한 취소
+
+            - TCL(Transaction Control Language)
+                - DCL에서 트랜잭션을 제어하는 명령 
+                    - => COMMIT + ROLLBACK만을 따로 분리해서 표현
     
     - 데이터모델
         - 객체-관계 데이터 모델
