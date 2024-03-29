@@ -62,7 +62,7 @@ SELECT bookname, publisher
 	WHERE bookname LIKE '%축구%'; -- 축구라는 글자로 시작과 끝
 
 
--- 도서 이름에 축구,야구가 포함된 출판사를 검색
+-- 두글자에 구로 끝나는 단어로 시작되는 도서 이름에 포함된 출판사를 검색
 SELECT bookname, publisher
 	FROM Book
 	WHERE bookname LIKE '_구%'; -- _(무슨글자든 한글자가 들어간) 구 라는 글자로 시작
