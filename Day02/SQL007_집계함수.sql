@@ -1,36 +1,36 @@
--- Áý°èÇÔ¼ö, GROUP BY
--- °í°´ÀÌ ÁÖ¹®ÇÑ µµ¼­ÀÇ ÃÑ ÆÇ¸Å¾×
+-- ì§‘ê³„í•¨ìˆ˜, GROUP BY
+-- ê³ ê°ì´ ì£¼ë¬¸í•œ ë„ì„œì˜ ì´ íŒë§¤ì•¡
 
-SELECT sum(saleprice) AS [ÃÑ ¸ÅÃâ]
+SELECT sum(saleprice) AS [ì´ ë§¤ì¶œ]
 	FROM Orders;
 
 
--- ±è¿¬¾Æ °í°´ÀÌ ÁÖ¹®ÇÑ µµ¼­ÀÇ ÃÑ ÆÇ¸Å¾×
+-- ê¹€ì—°ì•„ ê³ ê°ì´ ì£¼ë¬¸í•œ ë„ì„œì˜ ì´ íŒë§¤ì•¡
 SELECT *
 	FROM Customer;
 
--- ±è¿¬¾Æ´Â CUSTID 2¹øÀÌ´Ù
+-- ê¹€ì—°ì•„ëŠ” CUSTID 2ë²ˆì´ë‹¤
 
-SELECT sum(saleprice) AS '±è¿¬¾Æ°í°´ ÃÑ ÆÇ¸Å¾×'
+SELECT sum(saleprice) AS 'ê¹€ì—°ì•„ê³ ê° ì´ íŒë§¤ì•¡'
 	FROM Orders
 	WHERE custid = 2;
 
--- count()´Â * »ç¿ëÇÒ¼ö ÀÖÀ½
--- ³ª¸ÓÁö´Â Áý°èÇÔ¼ö´Â ¿­ ÄÃ·³ ÇÏ³ª¸¸ ÁöÁ¤ÇØ¼­ »ç¿ëÇÒ°Í
-Select COUNT(saleprice) AS [ÁÖ¹®°³¼ö], 
-	SUM(saleprice) AS [ÃÑ ÆÇ¸Å¾×], 
-	AVG(saleprice) AS [ÆÇ¸Å¾× Æò±Õ], 
-	MIN(saleprice) AS [ÁÖ¹®µµ¼­ ÃÖ¼Ò±Ý¾×],
-	MIN(saleprice) AS [ÁÖ¹®µµ¼­ ÃÖ´ë±Ý¾×] 
+-- count()ëŠ” * ì‚¬ìš©í• ìˆ˜ ìžˆìŒ
+-- ë‚˜ë¨¸ì§€ëŠ” ì§‘ê³„í•¨ìˆ˜ëŠ” ì—´ ì»¬ëŸ¼ í•˜ë‚˜ë§Œ ì§€ì •í•´ì„œ ì‚¬ìš©í• ê²ƒ
+Select COUNT(saleprice) AS [ì£¼ë¬¸ê°œìˆ˜], 
+	SUM(saleprice) AS [ì´ íŒë§¤ì•¡], 
+	AVG(saleprice) AS [íŒë§¤ì•¡ í‰ê· ], 
+	MIN(saleprice) AS [ì£¼ë¬¸ë„ì„œ ìµœì†Œê¸ˆì•¡],
+	MIN(saleprice) AS [ì£¼ë¬¸ë„ì„œ ìµœëŒ€ê¸ˆì•¡] 
 	from Orders;
 
--- µµ¼­°Ç¼ö
-SELECT COUNT(DISTINCT publisher) as [Áßº¹Á¦°Å] 
+-- ë„ì„œê±´ìˆ˜
+SELECT COUNT(DISTINCT publisher) as [ì¤‘ë³µì œê±°] 
 	from Book;
 
--- GROUP BY - ÇÊ¿äÁ¶°Ç ±×·ìÇÎ ÇØ¼­ °á°ú Åë°è¸¦ ³»±â À§ÇÔ
--- GROUP BYÀý¿¡ µé¾î ÀÖ´Â ÄÃ·³ ¿Ü¿¡´Â SELECT ¹®¿¡ Àý´ë ¾µ¼ö ¾øÀ½
--- ´Ü, SALEPRICE´Â Áý°èÇÔ¼ö¾È¿¡ µé¾îÀÖÀ¸¸é ¿¹¿Ü
-SELECT custid, SUM(saleprice) as 'ÆÇ¸Å¾×'
+-- GROUP BY - í•„ìš”ì¡°ê±´ ê·¸ë£¹í•‘ í•´ì„œ ê²°ê³¼ í†µê³„ë¥¼ ë‚´ê¸° ìœ„í•¨
+-- GROUP BYì ˆì— ë“¤ì–´ ìžˆëŠ” ì»¬ëŸ¼ ì™¸ì—ëŠ” SELECT ë¬¸ì— ì ˆëŒ€ ì“¸ìˆ˜ ì—†ìŒ
+-- ë‹¨, SALEPRICEëŠ” ì§‘ê³„í•¨ìˆ˜ì•ˆì— ë“¤ì–´ìžˆìœ¼ë©´ ì˜ˆì™¸
+SELECT custid, SUM(saleprice) as 'íŒë§¤ì•¡'
 	FROM Orders
 	GROUP BY custid;
