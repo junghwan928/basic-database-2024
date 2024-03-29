@@ -62,6 +62,7 @@
             - TCL(Transaction Control Language)
                 - DCL에서 트랜잭션을 제어하는 명령 
                     - => COMMIT + ROLLBACK만을 따로 분리해서 표현
+                    ![Commit](https://raw.githubusercontent.com/junghwan928/basic-database-2024/main/Image/Commit.jpg)
     
     - 데이터모델
         - 객체-관계 데이터 모델
