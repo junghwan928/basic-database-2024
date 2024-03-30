@@ -163,3 +163,11 @@
             - COUNT(계수)
             - MIN(최솟값)
             - MAX(최댓값)
+        
+	- 집계함수 외 일반 컬럼은 GROUP BY 절에 속한 컬럼만 SELECT문에 사용가능
+ 	- HAVING은 집계함수의 필터로 GROUP BY 뒤에 작성, WHERE절과 필터링이 다름
+	- 두 개 이상의 테이블 질의(Query)
+    
+  - 관계형 DB에서 가장 중요한 기법 중 하나 : JOIN!
+	- INNER JOIN(내부 조인) 참조
+    	- LEFT|RIGHT OUTER JOIN(외부 조인) - 어느 테이블이 기준인지에 따라서 결과가 상이함
