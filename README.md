@@ -170,3 +170,4 @@
 - 관계형 DB에서 가장 중요한 기법 중 하나 : JOIN!
     - INNER JOIN(내부 조인) 참조
     - LEFT|RIGHT OUTER JOIN(외부 조인) - 어느 테이블이 기준인지에 따라서 결과가 상이함
+    ![join](https://raw.githubusercontent.com/junghwan928/basic-database-2024/main/Image/join.png)
