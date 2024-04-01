@@ -247,4 +247,30 @@
     
     ```
     - ALTER - 개체를 변경/수정하는 구문
+    ``` sql
+    ALTER TABLE 테이블명
+    [ADD 속성이름 데이터타입]
+    [DROP COLUM 속성이름]
+    [ALTER COLUM 속성이름 데이터타입]
+    [ALTER COLUM 속성이름 [NULL | NOT NULL]]
+    [ADD PRIMARY KEY(속성이름)]
+    [[ADD | DROP] 제약조건이름];
+    ```
+
     - DROP - 개체를 삭제하는 구문
+    ```SQL
+    DROP TABLE 테이블명;
+    ```
+
+
+## 4일차
+- DML 학습(SELECT외)
+    - INSERT
+    - UPDATE
+    - DELETE
+
+- SQL 고급
+    - 내장함수
+    - 서브쿼리 리뷰
+    - 뷰
+    - 인덱스
