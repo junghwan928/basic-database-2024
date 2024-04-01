@@ -31,11 +31,13 @@ SELECT O.orderid, B.bookname, MAX(B.price - O.saleprice) AS PriceDifference
 -- 6. 도서 판매액 평균보다 자신의 구매액 평균이 더 높은 고객의 이름
 SELECT C.name
     FROM Customer C
+  
 JOIN (
     SELECT custid, AVG(saleprice) AS AvgPurchase
     FROM Orders
     GROUP BY custid
     ) AS CustomerPurchase ON C.custid = CustomerPurchase.custid
+
 JOIN (
     SELECT AVG(price) AS AvgBookPrice
     FROM Book
