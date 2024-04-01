@@ -220,6 +220,31 @@
                     - WHERE 절 - 여러 조건에 많이 사용
 
             - 집합연산 - JOIN 도 집합이지만, 속성별로 가로로 병합하기 때문에 집합이라 부르지 않음. 집합은 데이터를 서로로 합치는 것을 못함
-                - 합집합()
-                - 차집합()
-                - 교집합
+                - 합집합(UNION, 사용 많이함) - UNINON(중복제거), UNION ALL(중복허용)
+                - 차집합(EXCEPT, 거의 사용 안함)
+                - 교집합(INTERSECT, 거의 사용 안함)
+                - EXISTS
+
+
+- DDL 학습
+    - CREATE - 개체(데이터베이스, 테이블, 뷰, 사용자 등)을 생성하는 구문
+    ```SQL
+    -- CREATE 테이블 생성에 한정
+    CREATE TABLE 테이블명
+    ({ 속성이름 데이터타입
+    [NOT NULL]
+    [UNIQUE]
+    [DEFALUT 기본값]
+    [CHECK 체크조건]
+    }
+    [PRIMARY KEY 속성이름(들)]
+    {
+        [FORIEGN KEY 속성이름 REFERENCES 테이블이름(속성이름)]
+        [ON UPDATE [NO ACTION | CASCADE | SET NULL | SET DEFAULT]]
+    }
+    )
+
+    
+    ```
+    - ALTER - 개체를 변경/수정하는 구문
+    - DROP - 개체를 삭제하는 구문
