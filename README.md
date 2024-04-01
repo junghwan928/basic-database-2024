@@ -171,3 +171,15 @@
     - INNER JOIN(내부 조인) [참조](https://sql-joins.leopard.in.ua/)
     - LEFT|RIGHT OUTER JOIN(외부 조인) - 어느 테이블이 기준인지에 따라서 결과가 상이함
     ![join](https://raw.githubusercontent.com/junghwan928/basic-database-2024/main/Image/join.png)
+
+
+
+## Day03
+- DataBase 학습
+    - 관계 데이터 모델
+        - 무결성 제약 조건
+
+    
+- DML 학습
+    - SELECT 문
+        - OUTER JOIN(외부조인)
