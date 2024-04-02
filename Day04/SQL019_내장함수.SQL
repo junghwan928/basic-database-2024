@@ -23,4 +23,26 @@ from Book;
 select LOWER('Hello'), UPPER('hello')
 
 -- 공백제거
-SELECT LTRIM('      Hello     '), RTRIM('     Hello     '), TRIM('     Hello     ')
+SELECT '|' + LTRIM('      Hello     ') + '|', RTRIM('     Hello     '), TRIM('     Hello     ')
+
+-- SUBSTRING, DB은 인덱스가 1부터 시작
+SELECT SUBSTRING([name], 1, 1) AS '성씨', COUNT(*) AS '성씨별 인원'
+FROM Customer
+GROUP BY [name]
+
+-- 날짜와 시간 함수
+SELECT GETDATE();
+
+SELECT DAY(GETDATE()) -- 일
+SELECT MONTH(GETDATE()) -- 월
+SELECT YEAR(GETDATE()) -- 년
+
+-- 날짜 포맷을 원하는 형태로 변경 가능
+SELECT FORMAT(GETDATE(), 'yyyy-MM-dd')
+SELECT FORMAT(GETDATE(), 'HH:mm:ss')
+
+-- 주문 테이블에서 주문 10일후에 각 주문을 확정짓는다. 확정일자 출력
+-- dd = 날짜, mm = 달, yy = 년, qq = 분기, wk = 주
+SELECT orderid, saleprice, orderdate as '주문일자', DATEADD(dd, 10, orderdate) AS '확정일자'
+, DATEADD(mm, 10, orderdate) AS '통계일자'
+ from Orders
