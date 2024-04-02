@@ -2,6 +2,16 @@
 ***************************CREATING TABLES************************
 **************************************************************** */
 
+USE master;
+GO
+
+
+CREATE DATABASE HR;
+GO
+
+USE HR;
+GO
+
 CREATE TABLE regions (
     region_id INT PRIMARY KEY,
     region_name VARCHAR (25) DEFAULT NULL
