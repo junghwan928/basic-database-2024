@@ -352,7 +352,7 @@
             - 4. 프로토콜 사용 > 예, 로 변경
             - 5. IP주소 탭 > IP주소가 본인아이피 인것 > 사용 > 예로 변경
             - 6. 127.0.0.1로 된 주소 > 사용 > 예 로 변경
-            - 7. 적용후 SQL Server 서비스 > SQL Server(MSSQLSERVER) 더블클릭 후 , **다시 시작** 버튼 클릭후 , 재시작 
+            - 7. 적용후 SQL Server 서비스 > SQL Server(MSSQLSERVER) 더블클릭 후 , **다시 시작** 버튼 클릭후 , 재시작 필요
             ![join](https://raw.githubusercontent.com/junghwan928/basic-database-2024/main/Image/db005.png)
 
 - 데이터 모델링
