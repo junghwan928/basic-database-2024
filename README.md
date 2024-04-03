@@ -303,7 +303,38 @@
 - SQL 고급
     - 서브쿼리 리뷰
     - 뷰
+        - 복잡하고 쿼리로 생성되는 결과를 자주 사용하기 위해서 만드는 개체
+        - 편리하고, 보안에 강하며, 논리적 독립성을 띰
+        - 원본데이터가 변경되면 같이 변경되고, 인덱스 생성은 어렵, CUD 연산에 제약 있음
+
+        ```sql
+        -- 생성
+        CREATE view 뷰이름[(열이름 [, ... ])]
+        AS <SELECT 쿼리문>;
+
+        -- 수정
+        ALTER VIEW 뷰이름[(열이름 [, ... ])]
+        AS <SELECT 쿼리문>;
+        -- 삭제
+        DROP DATABASE 이름
+        ```
+
+
     - 인덱스
+    ```sql
+    --- 생성
+    CREATE[UNIQUE] [CLUSTERED|NONCLUSTERED] INDEX 인덱스 이름
+    ON 테이블명 (속성이름 [ASC|DESC], [... N]);
+    
+    -- 수정
+    ALTER INDEX {인덱스 이름 | ALL}
+    ON 테이블명 {REBULID | DISABLE | REORGANIZE}
+
+    -- 삭제
+    DROP INDEX 인덱스 이름 ON 테이블명;
+    ```
+
+- SSMS에서 실행계획을 가지고 쿼리 실행 성능 체크 할 수 있음 
 
 - 파이썬 SQL SERVER 연동 프로그래밍
     - PyQT GUI 생성
