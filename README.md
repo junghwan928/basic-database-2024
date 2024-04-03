@@ -337,7 +337,22 @@
 - SSMS에서 실행계획을 가지고 쿼리 실행 성능 체크 할 수 있음 
 
 - 파이썬 SQL SERVER 연동 프로그래밍
-    - PyQT GUI 생성
-    - SQL Server 데이터 핸들링
+    - Madang DB 관리 프로그램
+        - PyQT GUI 생성
+        - SQL Server 데이터 핸들링
+            - pymysql 라이브러리 설치
+            ```shell
+            > pip install pymssql
+            ```
+
+        - DB 연결설정 - Oracle, MySQL 등 설정이 없음. 구성관리자에서 TCP/IP로 접근을 허용하지 않으면 접속이 안됨
+            - 1. 시작메뉴 > 모든 앱> Microsoft SQL Server 20xx > SQL SERVER 20XX 구성관리자 실행
+            - 2. SQL SERVER 네트워크 구성 > MSSQL SERVER에 대한 프로토콜 클릭
+            - 3. TCP/IP 프로토콜 상태가 사용안함(최초) > TCP/IP를 더블클릭
+            - 4. 프로토콜 사용 > 예, 로 변경
+            - 5. IP주소 탭 > IP주소가 본인아이피 인것 > 사용 > 예로 변경
+            - 6. 127.0.0.1로 된 주소 > 사용 > 예 로 변경
+            - 7. 적용후 SQL Server 서비스 > SQL Server(MSSQLSERVER) 더블클릭 후 , **다시 시작** 버튼 클릭후 , 재시작 
+            ![join](https://raw.githubusercontent.com/junghwan928/basic-database-2024/main/Image/db005.png)
 
 - 데이터 모델링
