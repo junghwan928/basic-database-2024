@@ -25,7 +25,7 @@ GO
 DECLARE @i INT;
 SET @i = 0;
 
-WHILE (@i < 10000000)
+WHILE (@i < 2000000)
 BEGIN
 	SET @i = @i + 1;
 	INSERT INTO Users (username, guildno, regdate)
@@ -34,6 +34,7 @@ END;
 
 SELECT * 
   FROM Users;
+
 
 -- 완전히 삭제
 TRUNCATE TABLE Users; -- 1부터 초기화
