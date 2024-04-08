@@ -36,11 +36,11 @@ class qtApp(QMainWindow):
         cursor.close()
 
     def btnSaveClicked(self):
-        QMessageBox.about(self, '버튼', '신규버튼이 클릭됨')
+        QMessageBox.about(self, '버튼', '저장버튼이 클릭됨')
     def btnDelClicked(self):
-        QMessageBox.about(self, '버튼', '신규버튼이 클릭됨')
+        QMessageBox.about(self, '버튼', '삭제버튼이 클릭됨')
     def btnLoadClicked(self):
-        QMessageBox.about(self, '버튼', '신규버튼이 클릭됨')
+        QMessageBox.about(self, '버튼', '불러오기버튼이 클릭됨')
     def tblBooksSelected(self):
         QMessageBox.about(self, '테이블 위젯', '내용변경')
     
