@@ -441,3 +441,4 @@
     - DB보안 백업과 복원
     - 모델링 + 정규화
     - 데이터모델링 실습
+![modeling](https://raw.githubusercontent.com/junghwan928/basic-database-2024/main/Image/db007.png)
