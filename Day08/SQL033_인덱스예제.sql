@@ -17,6 +17,8 @@ CREATE INDEX IX_Users_username on Users(username);
 
 -- pk에 클러스터드 인덱스 설정됨
 
+
+-- 기본적으로 PK 를 걸면
 -- ! WHEREd에 검색을 위해서 username을 사용함
 -- 인덱스를 PK에 걷는게 아니라 username 
 CREATE CLUSTERED INDEX IX_Users_username on Users(username);
