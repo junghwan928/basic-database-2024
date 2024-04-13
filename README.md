@@ -366,6 +366,8 @@
         - DB 테이블의 varchar(ASCII) -> nvarchar(UTF-8) 변경
         - Python에서 pymssql로 접속할 때, Charset을 'UTF8'로 설정
         - INSERT 쿼리에 한글 입력되는 컬럼은 'N'을 붙여줌(유니코드로 입력하라는 뜻)
+        <video controls src="Image/db005.mp4" title="Title"></video>
+
 
 ## 7일차
 - SQL 고급
